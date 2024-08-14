@@ -224,7 +224,7 @@ main{
         line-height: 50px;
     }
     #home .home-row h1 br{
-        display: none;
+        display: inline;
     }
     #home .home-row p{
         font-size: 20px;
