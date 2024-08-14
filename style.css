@@ -436,6 +436,19 @@ main{
     font-size: 15px;
    
 }
+.divider{
+    width: 70px;
+    height: 4px;
+    background-color: var(--themeColor);
+    border-radius: 3px;
+}
+#resume .divider ~ p{
+    color: var(--textColor);
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    margin-top: 15px;
+}
 #resume .resume-row{
     display: flex;
     justify-content: space-between;
@@ -567,6 +580,19 @@ main{
     padding: 70px 30px;
     font-style: italic;
 }
+.divider{
+    width: 70px;
+    height: 4px;
+    background-color: var(--themeColor);
+    border-radius: 3px;
+}
+#portfolio .divider ~ p{
+    color: var(--textColor);
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    margin-top: 15px;
+}
 #portfolio .port-row{
     margin-top: 50px;
     display: grid;
@@ -655,6 +681,19 @@ main{
 #project{
     padding: 70px 30px;
     font-style: italic;
+}
+.divider{
+    width: 70px;
+    height: 4px;
+    background-color: var(--themeColor);
+    border-radius: 3px;
+}
+#project .divider ~ p{
+    color: var(--textColor);
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    margin-top: 15px;
 }
 #project .port-row{
     margin-top: 50px;
