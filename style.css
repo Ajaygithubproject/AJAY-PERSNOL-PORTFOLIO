@@ -203,12 +203,30 @@ main{
     font-style: italic;
 }
 #home .home-row p{
-    color: whitesmoke;
+    color:  rgb(245, 9, 9);
     font-size: 30px;
     font-weight: 500;
 }
-#home .home-row p span{
+/*#home .home-row p span{
     border-bottom: 4px solid var(--themeColor);
+} */
+#home .home-row .social-icons a{
+    
+    display:inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 37px;
+    background-color: var(--iconColor);
+    color: rgb(249, 53, 53);
+    font-size: 20px;
+    margin: 1.5px;
+    transition: 0.4s;
+
+}
+#home .home-row .social-icons a:hover{
+    background-color: white;
 }
 
 
