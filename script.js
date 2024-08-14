@@ -34,3 +34,22 @@ window.addEventListener('scroll',function(){
         }
     }) ;
 });
+
+
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzbj5sZkfyI0L442zc9iSpG0JHmCAFqJmZIeFm8BdvatoGE8ce-_7pEpa4pSV-QAMFB/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
