@@ -215,7 +215,7 @@ main{
     display:inline-block;
     width: 36px;
     height: 36px;
-    border-radius: 50%;
+    border-radius: 0%;
     text-align: center;
     line-height: 37px;
     background-color: var(--iconColor);
