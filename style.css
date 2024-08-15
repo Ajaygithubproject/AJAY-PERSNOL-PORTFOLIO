@@ -161,12 +161,13 @@ main{
     }
 }
 /*====home section*/
+
 #home{
     height: 100vh;
     width: 100%;
     background-image: url(sof.jpg);
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -175,6 +176,7 @@ main{
 }
 
 /* overlay*/
+
 #home::before{
     content: '';
     width: 100%;
@@ -203,25 +205,27 @@ main{
     font-style: italic;
 }
 #home .home-row p{
-    color:  rgb(245, 9, 9);
+    color: rgb(35, 197, 178);
     font-size: 30px;
     font-weight: 500;
 }
-/*#home .home-row p span{
+/* #home .home-row p span{
     border-bottom: 4px solid var(--themeColor);
-} */
+}
+/*icon*/
 #home .home-row .social-icons{
     padding: 80px 15px;
 }
 #home .home-row .social-icons a{
     
     display:inline-block;
-    width: 36px;
-    height: 36px;
-   /* border-radius: 0%; */
+    width: 46px;
+    height: 46px;
+    border-radius: 10%;
     text-align: center;
     line-height: 37px;
-    background-color: var(--iconColor);
+   
+    
     color: rgb(249, 53, 53);
     font-size: 20px;
     margin: 1.5px;
@@ -229,19 +233,23 @@ main{
 
 }
 #home .home-row .social-icons a:hover{
-    background-color: white;
-}
+    background-color: rgb(109, 103, 103);
+} 
+
+
+
+
 
 
 /*mobile view */
 @media only screen and (max-width: 670px){
     #home{
-        padding: 30px;
-        background-image: url(mobile.jpg);
+        padding: 40px;
+        background-image: url(mobile\ 1.jpg);
     }
     #home .home-row h1{
         font-size: 35px;
-        letter-spacing: 0;
+        letter-spacing: 0px;
         line-height: 50px;
     }
     #home .home-row h1 br{
@@ -251,7 +259,9 @@ main{
         font-size: 20px;
         font-weight: 400;
     }
+    
 }
+
 
 /*--- about--*/
 #about{
@@ -263,7 +273,7 @@ main{
 .sub-heading{
     color: rgb(0, 0, 0);
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
 }
 .divider{
     width: 80px;
@@ -383,6 +393,7 @@ main{
     }
 }
 
+
 /* new skill */
 #skill{
     padding: 10px 30px;
@@ -486,7 +497,6 @@ main{
 
 /*new skill end */
 
-/*resume */
 #resume{
     padding: 70px 30px;
     background-color: white;
@@ -651,6 +661,7 @@ main{
     font-weight: 400;
     margin-top: 15px;
 }
+
 #portfolio .port-row{
     margin-top: 50px;
     display: grid;
@@ -949,6 +960,8 @@ main{
     font-weight: 400;
     cursor: pointer;
 }
+
+
 /*mobile*/
 @media (max-width: 800px){
     #contact{
@@ -969,4 +982,9 @@ main{
         flex-direction: column;
         gap: 5px;
     }
+}
+#message{
+    color: rgb(0, 0, 0);
+    margin-top: -40px;
+    display: inline;
 }
