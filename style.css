@@ -213,9 +213,7 @@ main{
     border-bottom: 4px solid var(--themeColor);
 }
 /*icon*/
-#home .home-row .social-icons{
-    padding: 80px 15px;
-}
+
 #home .home-row .social-icons a{
     
     display:inline-block;
