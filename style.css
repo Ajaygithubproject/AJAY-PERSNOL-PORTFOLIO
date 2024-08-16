@@ -14,9 +14,9 @@
 :root{
     
     --sideBGColor:#040b14;
-    --themeColor:#e01237;
-    --iconColor:#2C2F3F;
-    --textColor:#525252;
+    --themeColor:#e01212;
+    --iconColor:#8790c2;
+    --textColor:#342f2f;
     --bgColor:white; 
 }
 
@@ -45,24 +45,24 @@ header .profile img{
 header .profile h1{
     color: white;
     font-weight: 700;
-    font-style: italic;
+    
+    font-family: "Edu AU VIC WA NT Hand", cursive;
 }
 header .profile .social-icons a{
     display: inline-block;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
+    width: 46px;
+    height: 40px;
+    border-radius: 10%;
     text-align: center;
     line-height: 37px;
-    background-color: var(--iconColor);
-    color: white;
+    color: rgb(249, 53, 53);
     font-size: 20px;
     margin: 1.5px;
     transition: 0.4s;
 
 }
 header .profile .social-icons a:hover{
-    background-color: var(--themeColor);
+    background-color: var(--sideBGColor);
 }
 
 
@@ -169,7 +169,7 @@ main{
 #home{
     height: 100vh;
     width: 100%;
-    background-image: url(sof.jpg);
+    background-image: url(multi\ color1.png);
     background-size: cover;
     background-attachment: fixed; 
     display: flex;
@@ -177,11 +177,12 @@ main{
     justify-content: center;
     padding: 70px ;
     position: relative;
+    
 }
 
-/* overlay*/
+/* overlay
 
-#home::before{
+#about::before{
     content: '';
     width: 100%;
     height: 100%;
@@ -193,7 +194,7 @@ main{
 
 #home .home-row{
     z-index: 2;
-}
+} */
 #home .home-row h3{
     font-family: "Grey Qo", cursive;
   font-weight: 600;
@@ -206,7 +207,7 @@ main{
   font-optical-sizing: auto;
   font-weight: 600px;
   font-style: normal;
-  color: #ffffff;
+  color: #000000;
 }
 #home .home-row h2{
     font-family: "Edu AU VIC WA NT Hand", cursive;
@@ -224,7 +225,7 @@ main{
     font-optical-sizing: auto;
     font-size: 20px;
     font-style: normal;
-    color: #fff;
+    color: #000000;
 }
 /* Button Styling */
 .btn {
@@ -275,7 +276,7 @@ main{
 @media only screen and (max-width: 670px){
     #home{
         padding: 40px;
-        background-image: url(mobile\ 1.jpg);
+        background-image: url(mobile\ blue.jpg);
     }
     #home .home-row h3{
         font-size: 25px;
