@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;italic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Grey+Qo&family=New+Amsterdam&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Grey+Qo&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=New+Amsterdam&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -162,6 +164,8 @@ main{
 }
 /*====home section*/
 
+/* Import Google Fonts */
+
 #home{
     height: 100vh;
     width: 100%;
@@ -185,54 +189,82 @@ main{
     position: absolute;
     top: 0;
     left: 0;
-
-
 }
+
 #home .home-row{
-    z-index: 1;
+    z-index: 2;
+}
+#home .home-row h3{
+    font-family: "Grey Qo", cursive;
+  font-weight: 600;
+  font-style: normal;
+   font-size: 40px; 
+   color: var(--themeColor);
 }
 #home .home-row h1{
-    font-size: 60px;
-    color: white;
-    font-weight: 700;
-    letter-spacing: -1px;
-    margin-bottom: 10px;
-    line-height: 70px;
-    font-style: italic;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600px;
+  font-style: normal;
+  color: #ffffff;
 }
-#home .home-row h1 span{
-     color: rgb(35, 197, 178);
-    font-style: italic;
+#home .home-row h2{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 200px;
+  font-style: normal;
+  color: var(--themeColor);
+  font-size: 12px;
 }
+
 #home .home-row p{
-    color: rgb(35, 197, 178);
-    font-size: 30px;
+    
+
+    font-family: "Josefin Slab", serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-style: normal;
+    color: #fff;
+}
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 6px 7px;
+    background-color: var(--themeColor); /* Replace with your theme color */
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
     font-weight: 500;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-/* #home .home-row p span{
-    border-bottom: 4px solid var(--themeColor);
+
+.btn:hover {
+    background-color: #fff; /* Replace with hover background color */
+    color: var(--themeColor); /* Replace with hover text color */
+    transform: translateY(-2px);
 }
-/*icon*/
+
 
 #home .home-row .social-icons a{
-    
-    display:inline-block;
+    display: inline-block;
     width: 46px;
     height: 46px;
     border-radius: 10%;
     text-align: center;
     line-height: 37px;
-   
-    
     color: rgb(249, 53, 53);
     font-size: 20px;
     margin: 1.5px;
     transition: 0.4s;
-
 }
+
 #home .home-row .social-icons a:hover{
     background-color: rgb(109, 103, 103);
-} 
+}
 
 
 
@@ -245,8 +277,13 @@ main{
         padding: 40px;
         background-image: url(mobile\ 1.jpg);
     }
-    #home .home-row h1{
-        font-size: 35px;
+    #home .home-row h3{
+        font-size: 25px;
+        letter-spacing: 0px;
+        line-height: 50px;
+    }
+    #home .home-row h3 span{
+        font-size: 25px;
         letter-spacing: 0px;
         line-height: 50px;
     }
@@ -254,7 +291,7 @@ main{
         display: inline;
     }
     #home .home-row p{
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 400;
     }
     
