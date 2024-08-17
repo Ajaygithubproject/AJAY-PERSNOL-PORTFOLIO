@@ -169,7 +169,7 @@ main{
 #home{
     height: 100vh;
     width: 100%;
-    background-image: url(multi color.png);
+    background-image: url(multi\ color1.png);
     background-size: cover;
     background-attachment: fixed; 
     display: flex;
